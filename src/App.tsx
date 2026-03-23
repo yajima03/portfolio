@@ -52,15 +52,6 @@ export default function PortfolioSite() {
     },
   ];
 
-  const achievements = [
-    'Hack U 東京電機大学 2024 最優秀賞',
-    '基本情報技術者試験 合格',
-    '応用情報技術者試験 合格',
-    '統計検定2級 合格',
-    '2025年 人工知能学会全国大会 ポスター発表',
-    '2026年 International Symposium on Artificial Life and Robotics 口頭発表',
-  ];
-
   const projects = [
     {
       title: 'ハッカソン：AI単',
