@@ -57,9 +57,9 @@ export default function PortfolioSite() {
       title: 'ハッカソン：AI単',
       period: 'Hack U 東京電機大学 2024 / 2週間',
       summary:
-        '大学生の英語学習を支援するアプリです。専門分野に沿った単語学習を支援することを目指し、チームで開発しました。',
+        '大学生の英語学習を支援するアプリです。専門分野に沿った単語学習を支援することを目指し、チームで開発し最優秀賞を獲得しました。',
       role:
-        '2つの機能を担当し、設計から実装まで担当しました。加えて、各メンバーが実装した機能の統合と結合テストを担当し、データ受け渡しやイベント連携の整合性を確認することで、全体が一貫して動作するよう調整しました。',
+        '2つの機能で設計から実装まで担当しました。加えて、各メンバーが実装した機能の統合と結合テストを担当し、データ受け渡しやイベント連携の整合性を確認することで、全体が一貫して動作するよう調整しました。',
       tech: ['Python', 'Streamlit', 'JavaScript', 'ChatGPT API', '形態素解析'],
       highlights: [
         'ChatGPTを用いた単語の意味検索',
@@ -125,13 +125,17 @@ export default function PortfolioSite() {
     '実用英語技能検定2級',
   ];
   
-  const portfolioTech = [
-    'React',
-    'TypeScript',
-    'Vite',
-    'Tailwind CSS',
-    'Vercel',
-    'GitHub',
+  const longTermJobs = [
+    '大学授業の Teaching Assistant',
+    '研究補助（所属研究室教授）',
+    '飲食店',
+    '温泉施設',
+  ];
+  
+  const shortTermJobs = [
+    '試験監督',
+    'イベント運営',
+    '物流',
   ];
 
 
@@ -147,9 +151,9 @@ export default function PortfolioSite() {
           <nav className="hidden gap-6 text-sm md:flex">
             <a href="#about" className="hover:text-slate-950"> About </a>
             <a href="#research" className="hover:text-slate-950"> Research </a>
+            <a href="#publications" className="hover:text-slate-950"> Publications </a>
             <a href="#projects" className="hover:text-slate-950"> Projects </a>
             <a href="#experience" className="hover:text-slate-950"> Experience </a>
-            <a href="#publications" className="hover:text-slate-950"> Publications </a>
             <a href="#skills" className="hover:text-slate-950"> Skills </a>
             <a href="#links" className="hover:text-slate-950"> Links </a>
           </nav>
@@ -496,9 +500,9 @@ export default function PortfolioSite() {
 
           <div className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm">
             <p className="text-sm font-medium uppercase tracking-[0.2em] text-orange-600">
-              Certifications
+              Certifications & Work Experience
             </p>
-            <h3 className="mt-3 text-2xl font-semibold">資格・ポートフォリオ技術</h3>
+            <h3 className="mt-3 text-2xl font-semibold">資格・アルバイト経験</h3>
 
             <div className="mt-6">
               <p className="text-sm font-semibold text-slate-800">資格</p>
@@ -510,11 +514,9 @@ export default function PortfolioSite() {
             </div>
 
             <div className="mt-6">
-              <p className="text-sm font-semibold text-slate-800">
-                このポートフォリオの使用技術
-              </p>
+              <p className="text-sm font-semibold text-slate-800">長期アルバイト</p>
               <div className="mt-3 flex flex-wrap gap-3">
-                {portfolioTech.map((item) => (
+                {longTermJobs.map((item) => (
                   <span
                     key={item}
                     className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm text-slate-700"
@@ -523,6 +525,21 @@ export default function PortfolioSite() {
                   </span>
                 ))}
               </div>
+            </div>
+
+            <div className="mt-6">
+              <p className="text-sm font-semibold text-slate-800">単発派遣アルバイト</p>
+              <div className="mt-3 flex flex-wrap gap-3">
+                {shortTermJobs.map((item) => (
+                  <span
+                    key={item}
+                    className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2 text-sm text-slate-700"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+              <p className="mt-2 text-sm text-slate-600">......etc</p>
             </div>
           </div>
         </section>
