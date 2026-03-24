@@ -3,7 +3,7 @@
 研究内容、開発経験、論文・発表実績、技術スタック、学生時代の取り組みなどを、1つのサイト上で分かりやすく整理して掲載しています。
 
 ## 公開URL
-- Portfolio: https://portfolio-yajima03s-projects.vercel.app/
+- Portfolio: [https://portfolio-yajima03s-projects.vercel.app/](https://portfolio-xi-gules-k1vtnnj07i.vercel.app/)
 
 ## 概要
 このサイトは、自分の研究・開発経験・実績を短時間で把握してもらえるように構成したポートフォリオです。
